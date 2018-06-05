@@ -1,4 +1,4 @@
-# Capcorn
+# Sosro
 
 Preview : https://sosro.netlify.com
 
