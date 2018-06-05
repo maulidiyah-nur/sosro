@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>right-arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="6.-Berita-Terkini" transform="translate(-737.000000, -611.000000)" stroke="#AE1620">
+            <g id="right-arrow" transform="translate(738.000000, 612.000000)">
+                <path d="M6.56378889,11.9171558 C6.49927536,11.9723278 6.4186586,12 6.33019153,12 C6.24132187,12 6.16120835,11.9723278 6.09669481,11.9171558 C5.9677684,11.8067257 5.9677684,11.627503 6.09669481,11.5170729 L10.203117,7.99977371 L6.09669481,4.48290558 C5.9677684,4.37238923 5.9677684,4.19290792 6.09669481,4.08282261 C6.22521865,3.97239246 6.43476182,3.97239246 6.56378889,4.08282261 L10.9033052,7.79977533 C11.0322316,7.91020547 11.0322316,8.08968678 10.9033052,8.1998583 L6.56378889,11.9171558 Z" id="Fill-1" stroke-width="0.5"></path>
+                <circle id="Oval" cx="8" cy="8" r="8"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

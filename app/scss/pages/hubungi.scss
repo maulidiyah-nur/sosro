@@ -1,0 +1,41 @@
+.hubungi{
+    background-image: url("../images/bg-stee.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: auto 688px;
+}
+.hubungi-map{
+    padding: 50px 0;
+    .map-wrapper{
+        min-height: 352px;
+        height: 100%;
+        width: 100%;
+    }
+    .map-meta{
+        background-color: $red;
+        color: $white;
+        padding: 75px 35px;
+        .meta-title{
+            font-family: Roboto-Bold;
+            font-size: 24px;
+            letter-spacing: 0;
+        }
+        .meta-subtitle{
+            font-family: Roboto-Medium;
+            font-size: 18px;
+            letter-spacing: 0;
+            line-height: 21px;
+        }
+        .meta-text{
+            font-family: Roboto;
+            font-size: 18px;
+            line-height: 27px;
+            letter-spacing: 0;
+        }
+    }
+}
+@media(min-width: 768px){
+    .hubungi{
+        background-size: contain;
+    }
+}

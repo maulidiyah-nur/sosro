@@ -1,0 +1,322 @@
+<section class="hubungi">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="page-header">
+                    Hubungi<br/> Kami
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <form class="page-content">
+                    <div class="row mb-5">
+                        <div class="col text-center">
+                            <a href="#" class="btn-link mr-3">Pertanyaan/Penawaran</a>
+                            <a href="#" class="btn-link deactive">Keluhan/Saran</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Nama Lengkap</label>
+                                <input />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Nomor Telepon</label>
+                                <input />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Perihal Pertanyaan</label>
+                                <select>
+                                    <option>Pilih Perihal</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Provinsi</label>
+                                <select>
+                                    <option>Pilih Provinsi</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Jenis Kelamin</label>
+                                <select>
+                                    <option>Pria</option>
+                                    <option>Wanita</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Kota/Kabupaten</label>
+                                <select>
+                                    <option>Pilih Kota</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Alamat Email</label>
+                                <input type="email"/>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Alamat Lengkap</label>
+                                <input />
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Pesan</label>
+                                <textarea rows="10"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <div class="help-text">Attach file dalam bentuk jpeg atau pdf untuk pengajuan kerjasama atau keluhan.</div>
+                                <input type="file"/>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-left">
+                            <div class="g-recaptcha mb-3" data-sitekey="6LeZEF0UAAAAAFBt1KUDBCWIPSD_R4gHcG-ssxCv"></div>
+                        </div>
+                        <div class="col-md-6 text-center text-md-right">
+                            <button class="btn btn-red xlarge">Kirim</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="hubungi-map">
+    <div class="row">
+        <div class="col-md-6 p-0">
+            <div id="map-wrapper" class="map-wrapper"></div>
+        </div>
+        <div class="col-md-6 p-0">
+            <div class="map-meta">
+                <div class="row mb-3">
+                    <div class="offset-3 col-9 meta-title">PT Sinar Sosro</div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-3 meta-subtitle">Address</div>
+                    <div class="col-9 meta-text">
+                        Gedung Graha Sosro<br/>
+                        Jl Raya Sultan Agung KM 28, Kel Medan Satria, Bekasi,<br/>
+                        Jawa Barat 17132
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-3 meta-subtitle">Call Center</div>
+                    <div class="col-9 meta-text">0855-1176-776</div>
+                </div>
+                <div class="row">
+                    <div class="col-3 meta-subtitle">Email</div>
+                    <div class="col-9 meta-text">contactus@sosro.com</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script>
+    $(document).ready(function(){
+        var mapElement = document.getElementById("map-wrapper");
+        var mapOptions =    {
+                                zoom: 15,
+                                center: new google.maps.LatLng(-6.1943225, 106.9703646),
+                                styles:  [
+                                            {
+                                                "featureType": "water",
+                                                "elementType": "geometry",
+                                                "stylers": [
+                                                    {
+                                                        "color": "#e9e9e9"
+                                                    },
+                                                    {
+                                                        "lightness": 17
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "featureType": "landscape",
+                                                "elementType": "geometry",
+                                                "stylers": [
+                                                    {
+                                                        "color": "#f5f5f5"
+                                                    },
+                                                    {
+                                                        "lightness": 20
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "featureType": "road.highway",
+                                                "elementType": "geometry.fill",
+                                                "stylers": [
+                                                    {
+                                                        "color": "#ffffff"
+                                                    },
+                                                    {
+                                                        "lightness": 17
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "featureType": "road.highway",
+                                                "elementType": "geometry.stroke",
+                                                "stylers": [
+                                                    {
+                                                        "color": "#ffffff"
+                                                    },
+                                                    {
+                                                        "lightness": 29
+                                                    },
+                                                    {
+                                                        "weight": 0.2
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "featureType": "road.arterial",
+                                                "elementType": "geometry",
+                                                "stylers": [
+                                                    {
+                                                        "color": "#ffffff"
+                                                    },
+                                                    {
+                                                        "lightness": 18
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "featureType": "road.local",
+                                                "elementType": "geometry",
+                                                "stylers": [
+                                                    {
+                                                        "color": "#ffffff"
+                                                    },
+                                                    {
+                                                        "lightness": 16
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "featureType": "poi",
+                                                "elementType": "geometry",
+                                                "stylers": [
+                                                    {
+                                                        "color": "#f5f5f5"
+                                                    },
+                                                    {
+                                                        "lightness": 21
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "featureType": "poi.park",
+                                                "elementType": "geometry",
+                                                "stylers": [
+                                                    {
+                                                        "color": "#dedede"
+                                                    },
+                                                    {
+                                                        "lightness": 21
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "elementType": "labels.text.stroke",
+                                                "stylers": [
+                                                    {
+                                                        "visibility": "on"
+                                                    },
+                                                    {
+                                                        "color": "#ffffff"
+                                                    },
+                                                    {
+                                                        "lightness": 16
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "elementType": "labels.text.fill",
+                                                "stylers": [
+                                                    {
+                                                        "saturation": 36
+                                                    },
+                                                    {
+                                                        "color": "#333333"
+                                                    },
+                                                    {
+                                                        "lightness": 40
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "elementType": "labels.icon",
+                                                "stylers": [
+                                                    {
+                                                        "visibility": "off"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "featureType": "transit",
+                                                "elementType": "geometry",
+                                                "stylers": [
+                                                    {
+                                                        "color": "#f2f2f2"
+                                                    },
+                                                    {
+                                                        "lightness": 19
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "featureType": "administrative",
+                                                "elementType": "geometry.fill",
+                                                "stylers": [
+                                                    {
+                                                        "color": "#fefefe"
+                                                    },
+                                                    {
+                                                        "lightness": 20
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "featureType": "administrative",
+                                                "elementType": "geometry.stroke",
+                                                "stylers": [
+                                                    {
+                                                        "color": "#fefefe"
+                                                    },
+                                                    {
+                                                        "lightness": 17
+                                                    },
+                                                    {
+                                                        "weight": 1.2
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                            };
+        var map = new google.maps.Map(mapElement, mapOptions);
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-6.1943225, 106.9703646),
+            map: map,
+            icon: "/images/map-marker.png"
+        });
+    })
+</script>

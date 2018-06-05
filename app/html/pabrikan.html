@@ -1,0 +1,87 @@
+<section class="pabrik">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="page-header">
+                    Pabrikan
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="page-content">
+                    <div class="row">
+                        <div class="col">
+                            <div id="map-wrapper" class="map-wrapper"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center">
+                            <a href="#" data-load="pabrikan.html" class="btn-link">
+                                <img src="images/pabrikan-active-ico.svg" />
+                                Pabrikan
+                            </a>
+                            <a href="#" data-load="peta-distribusi-nasional.html" class="btn-link inactive">
+                                <img src="images/distribusi-nasional-inactive-ico.svg" />
+                                Peta Distribusi Nasional
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row pabrik-info-list"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+        $(document).ready(function(){
+            var mapElement = document.getElementById("map-wrapper");
+            var mapOptions =    {
+                                    zoom: 5,
+                                    center: new google.maps.LatLng(-0.592530, 113.121260)
+                                };
+            var map = new google.maps.Map(mapElement, mapOptions);
+            $.ajax({
+                type : 'GET',
+                dataType : 'json',
+                url: '/data/pabrikan.json',
+                success : function(data) {
+                    var infoWindow = new google.maps.InfoWindow();
+                    data.forEach((p,i) => {
+                        var marker = new google.maps.Marker({
+                                        position: new google.maps.LatLng(p.lat ,p.lng),
+                                        map: map,
+                                        icon: "/images/map-marker-icon.png"
+                                    });
+                        google.maps.event.addListener(marker, "click", function () {
+                            var html =  "<h4>"+ p.name +"</h4>"+
+                                        "<div>"+ p.address + "</div>"+
+                                        "<div>Tel. "+ p.tel +"</div>"+
+                                        "<div>Fax. "+ p.fax +"</div>";
+                            infoWindow.setContent(html);
+                            infoWindow.open(mapOptions, this);
+                        });
+                        var pabrik_info_html =  '<div class="col-md-4 pabrik-item">'+
+                                                    '<div class="d-flex flex-row mb-2">'+
+                                                        '<div class="pabrik-icon"></div>'+
+                                                        '<div class="pabrik-title">'+ p.name +'</div>'+
+                                                    '</div>'+
+                                                    '<div class="d-flex flex-row mb-2">'+
+                                                        '<div class="pabrik-icon"><img src="images/location-small-ico.svg" /></div>'+
+                                                        '<div>'+ p.address +'</div>'+
+                                                    '</div>'+
+                                                    '<div class="d-flex flex-row mb-2">'+
+                                                        '<div class="pabrik-icon"><img src="images/phone-ico.svg" /></div>'+
+                                                        '<div>'+ p.tel +'</div>'+
+                                                    '</div>'+
+                                                    '<div class="d-flex flex-row">'+
+                                                        '<div class="pabrik-icon"><img src="images/fax-ico.svg" /></div>'+
+                                                        '<div>'+ p.fax +'</div>'+
+                                                    '</div>'+
+                                                '</div>';
+                        $(".pabrik-info-list").append(pabrik_info_html);
+                    });
+                } 
+            });
+        })
+    </script>

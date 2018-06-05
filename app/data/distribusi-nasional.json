@@ -1,0 +1,98 @@
+[
+    {
+        "lat": "3.5240184",
+        "lng": "98.7696733",
+        "name": "Sumut &amp; NAD",
+        "address": "Jl. Raya Tanjung Morawa KM. 14.5 Tj. Morawa,   Medan",
+        "tel": "(061) 7944753",
+        "fax": "(061) 7944522"
+    },
+    {
+        "lat": "-2.913221",
+        "lng": "104.648865",
+        "name": "Sumbagsel &amp; Babel",
+        "address": "Jl. Camat I Raya Palembang - Betung KM.16 Sukajadi  Kec. Talang Kelapa Banyuasin Sumatera Selatan",
+        "tel": "(0711) 430789",
+        "fax": "(0711) 430335"
+    },
+    {
+        "lat": "-6.245756",
+        "lng": "106.612620",
+        "name": "Banten",
+        "address": "Jl. Raya Legok Desa Cibogo Kulon Kel. Kelapa Dua   Kec. Curug Kab. Tangerang 15810",
+        "tel": "(021) 5461901-3",
+        "fax": "(021) 5461868"
+    },
+    {
+        "lat": "-6.193021",
+        "lng": "106.970799",
+        "name": "Jakarta",
+        "address": "Jl. Raya Sultan Agung KM. 28 Kel. Medan Satria, Bekasi,  Jawa Barat 17132",
+        "tel": "(021) 8894777",
+        "fax": "(021) 8894751"
+    },
+    {
+        "lat": "-6.947075",
+        "lng": "107.596194",
+        "name": "Jawa Barat Selatan",
+        "address": "Jl. Soekarno Hatta No.325 - 327 Bandung 40235",
+        "tel": "(022) 5203924 / (022) 5207336",
+        "fax": "(022) 5207262 / (022) 5228996"
+    },
+    {
+        "lat": "-6.735650",
+        "lng": "108.574943",
+        "name": "Jawa Barat Utara",
+        "address": "Jl. Kalijaga No. 41B Blok Karang Dawa Timur Rt.03 Rw 04  Kel. Pengambiran, Kec. Lemah Wungkuk, Cirebon 45113",
+        "tel": "(0231) 224310",
+        "fax": "(0231) 233421"
+    },
+    {
+        "lat": "-6.989607",
+        "lng": "110.451191",
+        "name": "Jawa Tengah",
+        "address": "Jl. Soekarno Hatta No. 188B Tlogosari, Semarang",
+        "tel": "(024) 6735433",
+        "fax": "(024) 6735434"
+    },
+    {
+        "lat": "-7.355506",
+        "lng": "112.726203",
+        "name": "Jawa Timur",
+        "address": "Jl. Letjen Sutoyo No. 49 - 51 Waru, Sidoarjo 61256",
+        "tel": "(031) 8543237",
+        "fax": "(031) 8532997"
+    },
+    {
+        "lat": "-8.710416",
+        "lng": "115.184781",
+        "name": "Bali &amp; Nusa Tenggara",
+        "address": "Jl. By Pass Sunset Road No. 108 SS, Kuta",
+        "tel": "(0361) 763675",
+        "fax": "(0361) 763671"
+    },
+    {
+        "lat": "-0.105519",
+        "lng": "109.410469",
+        "name": "Kalimantan",
+        "address": "Jl. Adi Sucipto KM. 12 Rt 008 Rw 01 (Depan Taman Makam Pahlawan)  Kel. Arang Limbung, Kec Sungai Raya, Kab. Kubu Raya, Kalimantan Barat",
+        "tel": "(0561) 724603/04",
+        "fax": "(0561) 704605"
+    },
+    {
+        "lat": "-5.105438",
+        "lng": "119.503290",
+        "name": "Sulawesi",
+        "address": "Jl. Kima 6 Kavling 2, Makassar",
+        "tel": "(0411) 511262 / 511272 / 511393 / 511920 / 511502 / 511180",
+        "fax": "(0411) 512197"
+    },
+    {
+        "lat": "-7.355485",
+        "lng": "112.726203",
+        "name": "Maluku &amp; Papua",
+        "address": "Jl. Letjen Sutoyo N0. 49 - 51 Waru, Sidoarjo 61256",
+        "tel": "(031) 8543237 / Hp 081333300183",
+        "fax": "(031) 8543237"
+    }
+]

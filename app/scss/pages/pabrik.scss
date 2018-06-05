@@ -1,0 +1,65 @@
+.pabrik{
+    background-image: url("../images/bg-countrychoice.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: auto 688px;
+    .map-wrapper{
+        height: 535px;
+        width: 100%;
+        
+    }
+    .btn-link{
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: Roboto-Bold;
+        font-size: 24px;
+        color: #303030;
+        letter-spacing: 0;
+        padding: 3px;
+        border-bottom: solid 4px $red;
+        margin: 72px 0px;
+        max-width: 150px;
+        img{
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            margin-bottom: 30px;
+        } 
+        &.inactive{
+            color: #E0E0E0;
+            border-bottom: solid 4px transparent;
+        }   
+    }
+    .pabrik-item{
+        font-family: Roboto-Light;
+        font-size: 18px;
+        color: $black;
+        letter-spacing: 0;
+        line-height: 21px;
+        margin-bottom: 52px;
+        .pabrik-title{
+            font-family: Roboto-Medium;
+            font-size: 20px;
+            color: $red;
+            letter-spacing: 0;
+            line-height: 24px;
+        }
+        .pabrik-icon{
+            width: 20px;
+            height: 20px;
+            margin-right: 15px;
+            object-fit: contain;
+        }
+    }
+}
+@media(min-width: 768px){
+    .pabrik{
+        background-size: contain;
+        .btn-link{
+            margin: 72px 40px; 
+            max-width: unset;
+        }
+    }
+}

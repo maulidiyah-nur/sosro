@@ -1,0 +1,23 @@
+.footer{
+    background-color: $blood-red;
+    color: $white;
+    padding-top: 23px;
+    font-family: Roboto-Bold;
+    font-size: 12px;
+    line-height: 19px;
+    a{
+        color: inherit;
+        &:hover{
+          text-decoration: none;  
+        }
+    }
+    .footer-title{
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    &.dark{
+        background-color: $red;
+        padding: 14px 0;
+    }
+}

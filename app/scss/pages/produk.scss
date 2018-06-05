@@ -1,0 +1,28 @@
+.produk{
+    background-image: url("../images/bg-tebs.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: auto 688px;
+    font-family: Roboto-Light;
+    .produk-list{
+        margin: 60px 0;
+        .produk-item{
+            filter: grayscale(100%);
+            -webkit-filter: grayscale(100%);
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+            &:hover,
+            &.main{
+                filter: none;
+                -webkit-filter: none;
+            }
+        }
+    }
+}
+@media(min-width: 768px){
+    .produk{
+        background-size: cover;
+    }
+}

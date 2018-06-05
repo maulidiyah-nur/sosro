@@ -1,0 +1,59 @@
+@mixin button-varian($color){
+    background-color: $color;
+    color: $white;
+    padding: 0px 10px;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 32px;
+    height: 32px;
+    border-radius: 16px;
+    border: none;
+    width: auto;
+    display: inline-block;
+    cursor: pointer;
+    &:active,
+    &:focus{
+        outline: none;
+    }
+    &:hover{
+        color: $white;
+        text-decoration: none;
+    }
+    &.large{
+        line-height: 50px;
+        height: 50px;
+        border-radius: 25px;
+        padding: 0 50px;
+    }
+    &.xlarge{
+        line-height: 63px;
+        height: 63px;
+        border-radius: 32px;
+        padding: 0 63px;
+    }
+}
+
+.btn-red{
+    @include button-varian($red);
+}
+.btn-blood-red{
+    @include button-varian($blood-red);
+}
+.btn-link{
+    font-family: Roboto-Bold;
+    font-size: 18px;
+    color: $blood-red;
+    line-height: 21px;
+    letter-spacing: 0;
+    &.deactive{
+        font-family: Roboto;
+        color: $grey;
+        &:hover{
+            color: $grey;
+        }
+    }
+    &:hover{
+        color: $blood-red;
+        text-decoration: none;
+    }
+}

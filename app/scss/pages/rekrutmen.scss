@@ -1,0 +1,229 @@
+.rekrutmen{
+    background-image: url("../images/bg-prima.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: auto 688px;
+    .page-content{
+        padding: 50px 0;
+    }
+    .filter{
+        padding: 10px 0 30px 0;
+        border-bottom: solid 2px #E0E0E0;
+        .title{
+            font-family: Roboto-Bold;
+            font-size: 24px;
+            color: $black;
+            letter-spacing: 0;
+            text-align: center;
+            line-height: 53px;
+            text-align: left;
+        }
+        form{
+            display: flex;
+            flex-direction: row;
+            label{
+                margin-right: 93px;
+                line-height: 53px;
+                font-family: Roboto-Medium;
+                font-size: 18px;
+                color: $black;
+                letter-spacing: 0;
+                text-align: center;
+            }
+            select{
+                display: flex;
+                flex: 1;
+            }
+        }
+    }
+    .job-item{
+        padding: 30px 0;
+        border-bottom: solid 2px #E0E0E0;
+        .job-header{
+            padding: 0;
+            button{
+                background: none;
+                background-image: url("../images/thin-plus-ico.svg");
+                background-size: 25px;
+                background-position: center right;
+                background-repeat: no-repeat;
+                border: none;
+                width: 100%;
+                padding: 0;
+                cursor: pointer;
+                &:active,
+                &:focus{
+                    outline: none;
+                }
+                .job-title{
+                    font-family: Roboto-Medium;
+                    font-size: 20px;
+                    color: $black;
+                    letter-spacing: 0;
+                    line-height: 24px;
+                    margin-bottom: 15px;
+                    text-align: left;
+                }
+                .job-location{
+                    font-family: Roboto-Light;
+                    font-size: 18px;
+                    color: $black;
+                    letter-spacing: 0;
+                    text-align: center;
+                    line-height: 21px;
+                    text-align: left;
+                }
+                &[aria-expanded="true"]{
+                    background-image: url("../images/thin-close-ico.svg");
+                    .job-title{
+                        color: $red;
+                    }
+                }
+            }
+        }
+        .job-body{
+            padding: 0;
+            font-family: Roboto-Light;
+            font-size: 18px;
+            color: #000000;
+            letter-spacing: 0;
+            line-height: 27px;
+            .job-meta{
+                margin: 30px 0;
+                font-family: Roboto-Medium;
+                font-size: 18px;
+                color: $black;
+                letter-spacing: 0;
+                line-height: 27px;
+                width: 350px;
+                max-width: 100%;
+            }
+            button{
+                margin-top: 30px;
+            }
+        }
+    }
+}
+.stepper{
+    .step-wrapper{
+        margin-bottom: 50px;        
+        .step{
+            display: none;
+            flex-direction: column;
+            &.active{
+                display: flex;
+            }
+            .step-header{
+                padding-bottom: 40px;
+                margin-bottom: 40px;
+                border-bottom: solid 2px #D7D5D5;
+                display: flex;
+                flex-direction: row;
+                .step-title{
+                    background: url("../images/step-arrow.svg");
+                    background-size: 20px;
+                    background-repeat: no-repeat;
+                    background-position: center right;
+                    font-family: Roboto-Bold;
+                    font-size: 28px;
+                    color: $black;
+                    letter-spacing: 0;
+                    padding-right: 30px;
+                    margin-right: 10px;
+                }
+                .step-subtitle{
+                    font-family: Roboto-Medium;
+                    font-size: 18px;
+                    color: $red;
+                    letter-spacing: 0;
+                }
+            }            
+            .step-body{
+                .form-group{
+                    margin-bottom: 20px;
+
+                    input.datepicker{
+                        padding: 15px 10px;
+                        border-radius: 0;
+                        background: url("../images/calendar-ico.svg");
+                        background-size: 20px;
+                        background-position: center right 15px;
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+        }
+    }
+    .step-navigation{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+        margin: 10px 0;
+        [class*="step"]{
+            margin-left: 50px; 
+            margin-bottom: 15px;
+            width: 100%;
+            justify-content: center;
+        }
+    }
+}
+.datepicker table tr td.active.active{
+    background: $red;
+    border-radius: 0;
+}
+.modal-rekrutmen-selesai{
+    p{
+        font-family: Roboto-Light;
+        font-size: 18px;
+        color: $black;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 27px;
+        margin-bottom: 30px;
+    }
+    h4, img{
+        margin-bottom: 40px;
+    }
+    .btn-red{
+        margin: 30px 0;
+    }
+}
+@media(min-width: 768px){
+    .rekrutmen{
+        background-size: 100%;
+        .filter{
+            padding: 10px 40px 30px 40px;
+        }
+        .job-item{
+            .job-header{
+                padding: 0 40px;
+            }
+            .job-body{
+                padding: 0 40px;
+            }
+        }
+    }
+    .stepper{
+        .step-wrapper{    
+            .step{
+                .step-header{
+                    .step-title{
+                        font-size: 36px;
+                        padding-right: 40px;
+                        margin-right: 20px;
+                    }
+                    .step-subtitle{
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+        .step-navigation{
+            flex-direction: row;
+            [class*="step"]{
+                width: 310px;
+            }
+        }
+    }
+}

@@ -1,0 +1,86 @@
+@import "./font.scss";
+@import "./vars.scss";
+@import "./header.scss";
+@import "./footer.scss";
+@import "./form.scss";
+@import "./button.scss";
+@import "./modal.scss";
+
+/* pages */
+@import "pages/home.scss";
+@import "pages/hubungi.scss";
+@import "pages/berita.scss";
+@import "pages/sertifikat.scss";
+@import "pages/produk.scss";
+@import "pages/pabrik.scss";
+@import "pages/divisi-internasional.scss";
+@import "pages/kunjungan.scss";
+@import "pages/rekrutmen.scss";
+@import "pages/profil.scss";
+
+body{
+    font-family: Roboto;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    background: $white;
+}
+
+.content-wrapper{
+    width: 100%;
+    padding-top: 65px;
+    position: relative;
+}
+
+section{
+    position: relative;
+    //z-index: 1;
+    overflow: hidden;
+    .section-title{
+        font-family: Roboto-Bold;
+        font-size: 32px;
+        line-height: 36px;
+        color: $blood-red;
+        margin-bottom: 15px;
+    }
+    .section-subtitle{
+        font-family: Roboto-Medium;
+        font-size: 20px;
+        line-height: 24px;
+        color: $blood-red;
+        margin-bottom: 30px;
+    }
+    .page-header{
+        background-color: transparentize($color: #0F1F2E , $amount: .61);
+        font-family: Roboto-Bold;
+        font-size: 40px;
+        line-height: 47px;
+        padding: 100px 60px 50px 0;
+        min-height: 245px;
+        color: $white;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .page-content{        
+        padding: 50px 0px;
+    }
+}
+@media(min-width: 768px){
+    section{
+        .page-content{
+            background-color: $white;
+            padding: 50px 40px;
+        }
+    }
+}
+
+
+h1, h2, h3, h4, h5{
+    font-family: Roboto-Bold;
+}
+
+

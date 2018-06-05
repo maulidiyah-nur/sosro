@@ -1,0 +1,158 @@
+.kunjungan{
+    background-image: url("../images/bg-tehbotol.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: auto 688px;
+    .page-content{
+        padding: 50px 0;
+    }
+    .page-title{
+        font-family: Roboto-Medium;
+        font-size: 24px;
+        color: $black;
+        letter-spacing: 0;
+        line-height: 28px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .page-subtitle{
+        font-family: Roboto-Light;
+        font-size: 18px;
+        color: $black;
+        letter-spacing: 0;
+        line-height: 21px;
+        text-align: center;
+        margin-bottom: 66px;
+    }
+    .form-group{
+        border-bottom: solid 3px #F9F9F9;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+        label{
+            font-family: Roboto-Light;
+            font-size: 18px;
+            color: $black;
+            letter-spacing: 0;
+            line-height: 21px;
+            padding: 21px 0;
+            width: 283px;
+            position: relative;
+            
+        }
+        input{
+            display: flex;
+            flex: 1;
+            border: none;
+            font-family: Roboto-Light;
+            font-size: 18px;
+            color: $black;
+            letter-spacing: 0;
+            line-height: 21px;
+            padding: 15px 0;
+            &:active,
+            &:focus{
+                outline: none;
+            }
+            &:valid {
+                background: url('../images/check.svg');
+                background-size: 18px;
+                background-repeat: no-repeat;
+                background-position: center right 40px;
+            }
+        }
+        .options{
+            display: flex;
+            flex: 1;
+            label.checkbox{
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: flex-start;
+                position: relative;
+                margin: 15px;
+                width: unset;
+                padding: unset;
+                cursor: pointer;
+                input[type="checkbox"]{
+                    display: none;
+                    &:checked + span.bullet{
+                        border: solid 1px $red;
+                    }
+                    &:checked + span.bullet:after{
+                        opacity: 1;
+                    }
+                }
+                span.bullet{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 100%;
+                    border: solid 1px #979797;
+                    background-color: $white;
+                    margin-right: 30px;
+                    position: relative;
+                    &:after{
+                        content: "";
+                        position: absolute;
+                        top: 2px;
+                        left: 2px;
+                        width: 24px;
+                        height: 24px;
+                        border-radius: 100%;
+                        background: $red;
+                        opacity: 0;
+                    }
+                }
+                span.checkbox-label{
+                    font-family: Roboto-Light;
+                    font-size: 18px;
+                    color: $black;
+                    letter-spacing: 0;
+                    line-height: 30px;
+                    width: unset;
+                    padding: 0;
+                    
+                }
+                &:after{
+                    content: none;
+                }
+            }
+        }
+        &:first-child{
+            border-top: solid 3px #F9F9F9;
+        }
+        &:last-child{
+            margin-bottom: 45px;
+        }
+    }
+}
+@media(min-width: 768px){
+    .kunjungan{
+        background-size: contain;
+        .form-group{
+            label{
+                padding-left: 32px;
+            }
+            input{
+                padding: 15px 32px;
+            }
+        }
+    }
+}
+@media(min-width: 992px){
+    .kunjungan{
+        .form-group{
+            flex-direction: row;
+            label{
+                &:after{
+                    content: ":";
+                    position: absolute;
+                    right: 0;
+                }
+            }
+            input{
+                padding: 0 32px;
+            }
+        }
+    }
+}

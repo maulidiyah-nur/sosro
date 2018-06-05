@@ -1,0 +1,106 @@
+[
+    {
+        "lat": "3.524082",
+        "lng": "98.771671",
+        "name": "Pabrik Deli Serdang",
+        "address": "Jl. Raya Tanjung Morawa Km.14,5 Medan 20362",
+        "tel": "(061) 7940437",
+        "fax": "(061) 7940076"
+    },
+    {
+        "lat": "-2.912911",
+        "lng": "104.649036",
+        "name": "Pabrik Palembang",
+        "address": "Jl. Camat I RT 52/18 Kel. Sukajadi Kec. Talang Kelapa KM 17 Banyuasin, Sumatera Selatan",
+        "tel": "(0711) 430789",
+        "fax": "(0711) 430005"
+    },
+    {
+        "lat": "-6.289042",
+        "lng": "106.130270",
+        "name": "Pabrik Pandeglang",
+        "address": "Jl. Karang Tanjung, Kel. Pagadungan, Kec. Karang Tanjung, Kab. Pandeglang 42251",
+        "tel": "(0253) 203028-30",
+        "fax": "(0253) 203032"
+    },
+    {
+        "lat": "-7.353238",
+        "lng": "109.326125",
+        "name": "PT.Tirta Purbalingga Adijaya Sentul",
+        "address": "Jl. Olympic Raya A-6 Kawasan Industri Sentul, Bogor 16180",
+        "tel": "(021) 87912547",
+        "fax": "(021) 87912549"
+    },
+    {
+        "lat": "-6.193032",
+        "lng": "106.970810",
+        "name": "Pabrik Cakung",
+        "address": "Jl. Raya Sultan Agung KM 28 Kel. Medan Satria, Bekasi, Jawa Barat 17132",
+        "tel": "(021) 88861388",
+        "fax": "(021) 8843318"
+    },
+    {
+        "lat": "-6.258154",
+        "lng": "107.043217",
+        "name": "Pabrik Tambun",
+        "address": "Jl. Diponegoro Km.39 Desa Jatimulya, Tambun, Bekasi 17510",
+        "tel": "(021) 8802408",
+        "fax": "(021) 8801741"
+    },
+    {
+        "lat": "-6.266861",
+        "lng": "107.090439",
+        "name": "Pabrik Cibitung",
+        "address": "Jl. Imam Bonjol Km.44 Ds. Telaga Asih, Kec. Cikarang Barat - Bekasi 17520",
+        "tel": "(021) 88360141",
+        "fax": "(021) 88360142"
+    },
+    {
+        "lat": "-6.759435",
+        "lng": "106.770936",
+        "name": "PT.Tirta Purbalingga Adijaya Sukabumi",
+        "address": "Desa Pesawahan, Kecamatan Cicurug, Kabupaten Sukabumi",
+        "tel": "(0266) 736780",
+        "fax": "(0266) 736782"
+    },
+    {
+        "lat": "-7.376597",
+        "lng": "109.681091",
+        "name": "PT.Tirta Purbalingga Adijaya Purbalingga",
+        "address": "Desa Kutasari, Kecamatan Kutasari, Kabupaten Purbalingga",
+        "tel": "(0281) 892116",
+        "fax": "(0281) 892697"
+    },
+    {
+        "lat": "-7.193027",
+        "lng": "110.417860",
+        "name": "Pabrik Ungaran",
+        "address": "Jl. Raya Semarang Bawen Km.28 Bergas, Ungaran, Semarang 50552",
+        "tel": "(0298) 522745",
+        "fax": "(0298) 522738"
+    },
+    {
+        "lat": "-7.535242",
+        "lng": "112.557385",
+        "name": "Pabrik Mojokerto",
+        "address": "Jl. Ir. Sutami Lingkar Awang-awang Mojosari Mojokerto",
+        "tel": "(0321) 590330",
+        "fax": "(0321) 590323"
+    },
+    {
+        "lat": "-7.362205",
+        "lng": "112.637228",
+        "name": "Pabrik Gresik",
+        "address": "Jl. Raya Cangkir Km.21, Driyorejo, Gresik 61177",
+        "tel": "(031) 7507124",
+        "fax": "(031) 7508152"
+    },
+    {
+        "lat": "-8.565322",
+        "lng": "115.289668",
+        "name": "Pabrik Bali",
+        "address": "Jl. Raya Kemenuh, Sukawati, Gianyar 80582",
+        "tel": "(0361) 952501",
+        "fax": "(0361) 952503"
+    }
+]
