@@ -389,6 +389,9 @@ form select {
 
 form select {
   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #FFFFFF;
   background-image: url("../images/caret-selectbox.svg");
   background-position: right 15px center;
   background-repeat: no-repeat;

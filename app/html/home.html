@@ -62,7 +62,7 @@
         </div>
         <div class="row">
             <div class="col-md-6">
-                <div class="berita-item">
+                <div class="berita-item wow fadeInDown">
                     <div class="berita-image">
                         <img src="images/home-berita1.jpg"/>
                     </div>
@@ -70,7 +70,7 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="berita-item">
+                <div class="berita-item wow fadeInDown">
                     <div class="berita-image">
                         <img src="images/home-berita2.jpg"/>
                     </div>
@@ -78,7 +78,7 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="berita-item">
+                <div class="berita-item wow fadeInDown">
                     <div class="berita-image">
                         <img src="images/home-berita3.jpg"/>
                     </div>
@@ -86,7 +86,7 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="berita-item">
+                <div class="berita-item wow fadeInDown">
                     <div class="berita-image">
                         <img src="images/home-berita4.jpg"/>
                     </div>
@@ -104,10 +104,10 @@
 <section class="home-sejarah">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 wow fadeInDown">
                 <img src="images/sejarah.jpg" class="img-fluid">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 wow fadeInDown">
                 <div class="row">
                     <div class="col">
                         <div class="section-title mt-5">Sejarah<br/> PT.SINAR SOSRO</div>
@@ -131,19 +131,19 @@
 </section>
 <section class="home-kunjungan">
     <div class="row">
-        <div class="col-md-4 kunjungan-item">
+        <div class="col-md-4 kunjungan-item wow fadeInDown">
             <img src="images/kunjungan1.jpg" class="img-fluid"/>
         </div>
-        <div class="col-md-4 kunjungan-item">
+        <div class="col-md-4 kunjungan-item wow fadeInDown">
             <img src="images/kunjungan2.jpg" class="img-fluid"/>
         </div>
-        <div class="col-md-4 kunjungan-item">
+        <div class="col-md-4 kunjungan-item wow fadeInDown">
             <img src="images/kunjungan3.jpg" class="img-fluid"/>
         </div>
     </div>
     <div class="container">
         <div class="row">
-            <div class="col text-center">
+            <div class="col text-center wow fadeInDown">
                 <div class="section-title mt-5">Kunjungan ke PT.SINAR SOSRO</div>
                 <h5 class="mb-3">Melihat bagaimana produk terbaik SINAR SOSRO dibuat</h5>
                 <p>
@@ -166,21 +166,21 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6 mb-3 text-center">
+                    <div class="col-md-6 mb-3 text-center wow fadeInDown">
                         <img src="images/sertifikat1.png" class="img-fluid"/>
                     </div>
                     <div class="col-md-6">
                         <div class="row">
-                            <div class="col-6 mb-3 text-center">
+                            <div class="col-6 mb-3 text-center wow fadeInDown">
                                 <img src="images/sertifikat2.png" class="img-fluid"/>
                             </div>
-                            <div class="col-6 mb-3 text-center">
+                            <div class="col-6 mb-3 text-center wow fadeInDown">
                                 <img src="images/sertifikat3.png" class="img-fluid"/>
                             </div>
-                            <div class="col-6 mb-3 text-center">
+                            <div class="col-6 mb-3 text-center wow fadeInDown">
                                 <img src="images/sertifikat4.png" class="img-fluid"/>
                             </div>
-                            <div class="col-6 mb-3 text-center">
+                            <div class="col-6 mb-3 text-center wow fadeInDown">
                                 <img src="images/sertifikat5.png" class="img-fluid"/>
                             </div>
                         </div>
@@ -197,6 +197,7 @@
 </section>
 <script>
     $(document).ready(function(){
+        new WOW().init();
         var big_slider_carousel = $('.home-big-slider .owl-carousel');
         big_slider_carousel.owlCarousel({
             items:1,
