@@ -70,14 +70,16 @@ gulp.task('images', function(){
     .pipe(gulp.dest('docs/images'))
 });
 
-gulp.task('fonts', function() {
-    return gulp.src('app/fonts/**/*')
-    .pipe(gulp.dest('docs/fonts'))
-})
-
 gulp.task('html', function() {
     return gulp.src('app/html/**/*')
     .pipe(gulp.dest('docs/html'))
+})
+
+gulp.task('data', function() {
+    return gulp.src([
+        'app/data/*'
+    ])
+    .pipe(gulp.dest('docs/data'))
 })
 
 gulp.task('clean:docs', function() {
@@ -86,7 +88,7 @@ gulp.task('clean:docs', function() {
 
 gulp.task('build', function (callback) {
     runSequence('clean:docs', 
-      ['sass', 'js', 'css', 'html', 'useref', 'images', 'fonts'],
+      ['sass', 'js', 'css', 'html', 'useref', 'images', 'data'],
       callback
     )
 })
