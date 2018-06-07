@@ -6,11 +6,12 @@
     .nav-tabs {
         border-bottom: none;
         .nav-link{
-            font-family: Roboto-Bold;
+            font-family: Roboto;
             font-size: 18px;
             color: $grey;
             letter-spacing: 0;
             &.active{
+                font-family: Roboto-Bold;
                 color: $red;
                 border-color: transparent;
             }

@@ -701,11 +701,12 @@ form .form-group {
   .hubungi .nav-tabs {
     border-bottom: none; }
     .hubungi .nav-tabs .nav-link {
-      font-family: Roboto-Bold;
+      font-family: Roboto;
       font-size: 18px;
       color: #C7C7C7;
       letter-spacing: 0; }
       .hubungi .nav-tabs .nav-link.active {
+        font-family: Roboto-Bold;
         color: #AE1620;
         border-color: transparent; }
       .hubungi .nav-tabs .nav-link:hover {
