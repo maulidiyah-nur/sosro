@@ -61,7 +61,7 @@
                             infoWindow.setContent(html);
                             infoWindow.open(mapOptions, this);
                         });
-                        var pabrik_info_html =  '<div class="col-md-4 pabrik-item">'+
+                        var pabrik_info_html =  '<div class="col-md-4 pabrik-item" data-lat="'+p.lat+'" data-lng="'+p.lng+'">'+
                                                     '<div class="d-flex flex-row mb-2">'+
                                                         '<div class="pabrik-icon"></div>'+
                                                         '<div class="pabrik-title">'+ p.name +'</div>'+
@@ -83,5 +83,12 @@
                     });
                 } 
             });
+            $(document).on('click', '.pabrik-item', function(){
+                var lat = $(this).data('lat');
+                var lng = $(this).data('lng');
+
+                map.setZoom(12);
+                map.setCenter(new google.maps.LatLng(lat, lng));
+            })
         })
     </script>

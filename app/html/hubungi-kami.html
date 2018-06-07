@@ -9,91 +9,180 @@
         </div>
         <div class="row">
             <div class="col">
-                <form class="page-content">
-                    <div class="row mb-5">
-                        <div class="col text-center">
-                            <a href="#" class="btn-link mr-3">Pertanyaan/Penawaran</a>
-                            <a href="#" class="btn-link deactive">Keluhan/Saran</a>
-                        </div>
-                    </div>
+                <div class="page-content">
                     <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label>Nama Lengkap</label>
-                                <input />
+                        <div class="col">
+                            <ul class="nav nav-tabs nav-justified">
+                                <li class="nav-item">
+                                    <a class="nav-link text-right active" id="pertanyaan-tab" data-toggle="tab" href="#pertanyaan">Pertanyaan/Penawaran</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-left" id="keluhan-tab" data-toggle="tab" href="#keluhan">Keluhan/Saran</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="pertanyaan">
+                                    <form class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Nama Lengkap</label>
+                                                <input />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Nomor Telepon</label>
+                                                <input />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Perihal Pertanyaan</label>
+                                                <select>
+                                                    <option>Pilih Perihal</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Provinsi</label>
+                                                <select>
+                                                    <option>Pilih Provinsi</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Jenis Kelamin</label>
+                                                <select>
+                                                    <option>Pria</option>
+                                                    <option>Wanita</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Kota/Kabupaten</label>
+                                                <select>
+                                                    <option>Pilih Kota</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Alamat Email</label>
+                                                <input type="email"/>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Alamat Lengkap</label>
+                                                <input />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label>Pesan</label>
+                                                <textarea rows="10"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <div class="help-text">Attach file dalam bentuk jpeg atau pdf untuk pengajuan kerjasama atau keluhan.</div>
+                                                <input type="file"/>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 text-left">
+                                            <div class="g-recaptcha mb-3" data-sitekey="6LeZEF0UAAAAAFBt1KUDBCWIPSD_R4gHcG-ssxCv"></div>
+                                        </div>
+                                        <div class="col-md-6 text-center text-md-right">
+                                            <button class="btn btn-red xlarge">Kirim</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="tab-pane fade" id="keluhan">
+                                    <form class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Nama Lengkap</label>
+                                                <input />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Nomor Telepon</label>
+                                                <input />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Perihal Keluhan</label>
+                                                <select>
+                                                    <option>Pilih Perihal</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Provinsi</label>
+                                                <select>
+                                                    <option>Pilih Provinsi</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Jenis Kelamin</label>
+                                                <select>
+                                                    <option>Pria</option>
+                                                    <option>Wanita</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Kota/Kabupaten</label>
+                                                <select>
+                                                    <option>Pilih Kota</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Alamat Email</label>
+                                                <input type="email"/>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Alamat Lengkap</label>
+                                                <input />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label>Pesan</label>
+                                                <textarea rows="10"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <div class="help-text">Attach file dalam bentuk jpeg atau pdf untuk pengajuan kerjasama atau keluhan.</div>
+                                                <input type="file"/>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 text-left">
+                                            <div class="g-recaptcha mb-3" data-sitekey="6LeZEF0UAAAAAFBt1KUDBCWIPSD_R4gHcG-ssxCv"></div>
+                                        </div>
+                                        <div class="col-md-6 text-center text-md-right">
+                                            <button class="btn btn-red xlarge">Kirim</button>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label>Nomor Telepon</label>
-                                <input />
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label>Perihal Pertanyaan</label>
-                                <select>
-                                    <option>Pilih Perihal</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label>Provinsi</label>
-                                <select>
-                                    <option>Pilih Provinsi</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label>Jenis Kelamin</label>
-                                <select>
-                                    <option>Pria</option>
-                                    <option>Wanita</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label>Kota/Kabupaten</label>
-                                <select>
-                                    <option>Pilih Kota</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label>Alamat Email</label>
-                                <input type="email"/>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label>Alamat Lengkap</label>
-                                <input />
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label>Pesan</label>
-                                <textarea rows="10"></textarea>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <div class="help-text">Attach file dalam bentuk jpeg atau pdf untuk pengajuan kerjasama atau keluhan.</div>
-                                <input type="file"/>
-                            </div>
-                        </div>
-                        <div class="col-md-6 text-left">
-                            <div class="g-recaptcha mb-3" data-sitekey="6LeZEF0UAAAAAFBt1KUDBCWIPSD_R4gHcG-ssxCv"></div>
-                        </div>
-                        <div class="col-md-6 text-center text-md-right">
-                            <button class="btn btn-red xlarge">Kirim</button>
                         </div>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
     </div>

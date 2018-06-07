@@ -11,6 +11,7 @@
         text-align: center;
         line-height: 36px;
         position:relative;
+        padding-top: 50px;
         padding-bottom: 50px;
         margin-bottom: 50px;
         background: $white;
@@ -70,5 +71,8 @@
 @media(min-width: 768px){
     .sertifikat{
         background-size: contain;
+        .pretitle{
+            padding-top: 0;
+        }
     }
 }

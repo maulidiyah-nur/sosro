@@ -3,6 +3,28 @@
     background-repeat: no-repeat;
     background-position: top;
     background-size: auto 688px;
+    .nav-tabs {
+        border-bottom: none;
+        .nav-link{
+            font-family: Roboto-Bold;
+            font-size: 18px;
+            color: $grey;
+            letter-spacing: 0;
+            &.active{
+                color: $red;
+                border-color: transparent;
+            }
+            &:hover{
+                border-color: transparent;
+            }
+        }
+    }
+    .tab-content{
+        padding: 40px 0;
+        .form-group{
+            margin-bottom: 30px;
+        }
+    }
 }
 .hubungi-map{
     padding: 50px 0;

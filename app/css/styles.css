@@ -377,7 +377,7 @@ form select {
   line-height: 21px;
   letter-spacing: 0;
   padding: 15px 10px;
-  border: solid 1px #C7C7C7;
+  border: solid 1px #E0E0E0;
   border-radius: 0; }
   form input:active, form input:focus,
   form textarea:active,
@@ -655,7 +655,8 @@ form .form-group {
     height: 250px;
     width: 100%;
     margin-bottom: 30px;
-    position: relative; }
+    position: relative;
+    display: inline-block; }
     .home-berita-terkini .berita-item .berita-image {
       width: 100%;
       height: 100%; }
@@ -697,6 +698,22 @@ form .form-group {
   background-repeat: no-repeat;
   background-position: top;
   background-size: auto 688px; }
+  .hubungi .nav-tabs {
+    border-bottom: none; }
+    .hubungi .nav-tabs .nav-link {
+      font-family: Roboto-Bold;
+      font-size: 18px;
+      color: #C7C7C7;
+      letter-spacing: 0; }
+      .hubungi .nav-tabs .nav-link.active {
+        color: #AE1620;
+        border-color: transparent; }
+      .hubungi .nav-tabs .nav-link:hover {
+        border-color: transparent; }
+  .hubungi .tab-content {
+    padding: 40px 0; }
+    .hubungi .tab-content .form-group {
+      margin-bottom: 30px; }
 
 .hubungi-map {
   padding: 50px 0; }
@@ -746,7 +763,7 @@ form .form-group {
       height: 100%; }
   .berita .berita-content {
     padding: 15px;
-    border: solid 1px #C7C7C7;
+    border: solid 1px #E0E0E0;
     margin-bottom: 40px; }
     .berita .berita-content .berita-title {
       font-family: Roboto-Medium;
@@ -780,11 +797,26 @@ form .form-group {
       font-size: 16px;
       color: #AE1620;
       letter-spacing: 0;
-      line-height: 19px; }
+      line-height: 19px;
+      display: flex;
+      flex-direction: row; }
       .berita .berita-content .berita-link img {
         width: 14px;
         height: 14px;
         margin-right: 12px; }
+  .berita .owl-carousel .owl-dots {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .berita .owl-carousel .owl-dots .owl-dot {
+      height: 15px;
+      width: 15px;
+      margin-right: 15px;
+      border-radius: 100%;
+      background-color: #C7C7C7; }
+      .berita .owl-carousel .owl-dots .owl-dot.active {
+        background-color: #AE1620; }
   .berita .featured {
     margin-bottom: 89px; }
     .berita .featured .berita-image {
@@ -854,6 +886,7 @@ form .form-group {
     text-align: center;
     line-height: 36px;
     position: relative;
+    padding-top: 50px;
     padding-bottom: 50px;
     margin-bottom: 50px;
     background: #FFFFFF;
@@ -901,7 +934,9 @@ form .form-group {
 
 @media (min-width: 768px) {
   .sertifikat {
-    background-size: contain; } }
+    background-size: contain; }
+    .sertifikat .pretitle {
+      padding-top: 0; } }
 
 .produk {
   background-image: url("../images/bg-tebs.jpg");
@@ -1111,11 +1146,11 @@ form .form-group {
         width: unset;
         padding: unset;
         cursor: pointer; }
-        .kunjungan .form-group .options label.checkbox input[type="checkbox"] {
+        .kunjungan .form-group .options label.checkbox input[type="radio"] {
           display: none; }
-          .kunjungan .form-group .options label.checkbox input[type="checkbox"]:checked + span.bullet {
+          .kunjungan .form-group .options label.checkbox input[type="radio"]:checked + span.bullet {
             border: solid 1px #AE1620; }
-          .kunjungan .form-group .options label.checkbox input[type="checkbox"]:checked + span.bullet:after {
+          .kunjungan .form-group .options label.checkbox input[type="radio"]:checked + span.bullet:after {
             opacity: 1; }
         .kunjungan .form-group .options label.checkbox span.bullet {
           width: 30px;
@@ -1347,14 +1382,14 @@ form .form-group {
       width: 310px; } }
 
 .profil {
-  background-image: url("../images/bg-office.jpg");
+  background-image: url("../images/bg-office.png");
   background-repeat: no-repeat;
   background-position: top;
   background-size: auto 245px;
   padding-bottom: 40px; }
   .profil .page-header {
     background: transparent;
-    margin-bottom: 45px; }
+    margin-bottom: 60px; }
   .profil p {
     font-family: Roboto-Light;
     font-size: 18px;
