@@ -1492,7 +1492,7 @@ form .form-group {
 
 @media (min-width: 768px) {
   .profil {
-    background-size: auto 245px; }
+    background-size: 100% 245px; }
   .history .history-navigator span {
     margin-right: 60px; }
   .history .arrow-left,
