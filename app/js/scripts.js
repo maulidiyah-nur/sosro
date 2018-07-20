@@ -8,7 +8,7 @@ $(document).ready(function(){
 
     /*
      * content loader
-     * for FE dev purpose only 
+     * for FE dev purpose only
     */
     $(document).on('click', '[data-load]', function(){
         var htmlSource = $(this).data('load');
@@ -32,4 +32,12 @@ $(document).ready(function(){
 
     loadContent("home.html");
 
-})
+});
+
+$(function() {
+  $('.add-form').click( function() {
+  var id = $(this).attr('data-id');
+  $('.to-add[data-id="' + id+'"]').addClass('active animated fadeIn');
+
+  })
+});

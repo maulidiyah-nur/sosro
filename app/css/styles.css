@@ -1593,3 +1593,16 @@ h1, h2, h3, h4, h5 {
   margin: 30px 0px;
   height: 250px;
   border-radius: 10px; }
+
+.add-form {
+  padding: 30px 15px;
+  cursor: pointer; }
+  .add-form label {
+    color: #AE1620;
+    margin-left: 10px;
+    cursor: pointer; }
+
+.to-add {
+  display: none; }
+  .to-add .active {
+    display: flex; }

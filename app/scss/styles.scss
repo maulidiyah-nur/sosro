@@ -98,3 +98,18 @@ h1, h2, h3, h4, h5{
   height: 250px;
   border-radius: 10px;
 }
+.add-form {
+  padding: 30px 15px;
+  cursor: pointer;
+  label {
+    color: #AE1620;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+}
+.to-add {
+  display: none;
+  .active {
+    display: flex;
+  }
+}
