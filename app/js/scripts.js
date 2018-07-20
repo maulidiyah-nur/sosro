@@ -34,10 +34,8 @@ $(document).ready(function(){
 
 });
 
-$(function() {
-  $('.add-form').click( function() {
+  $('.add-form').on('click', function() {
   var id = $(this).attr('data-id');
   $('.to-add[data-id="' + id+'"]').addClass('active animated fadeIn');
 
-  })
 });
